@@ -3,7 +3,7 @@
 <head>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
  <link href="style.css" rel="stylesheet" type="text/css">
 
@@ -44,8 +44,75 @@
     <section class="banner-ever">
         <div class="margin">
             <h2>Browse everything.</h2>
+
+                <div class="desktop" >
+
+                    <img src="image/ipader/Hero image.png" >
+
+                </div>
+
+                <div class="tab" >
+
+                        <img src="image/ipader/Hero image-1.png" >
+                </div>
+
+                <div class="mobile" >
+
+                        <img src="image/ipader/Hero image-2.png" >
+                </div>
+
         </div>
     </section>
+
+
+    <script>
+
+        $(window).on("scroll", function() {
+    var scrollTop = $(window).scrollTop();   // vertical scroll position
+    var scrollLeft = $(window).scrollLeft(); // horizontal scroll position
+    
+    console.log("Scroll Top: " + scrollTop);
+    console.log("Scroll Left: " + scrollLeft);
+
+    if(scrollTop >= 100){
+
+        jQuery('.sticky-menu').addClass('makesticky');
+
+
+        if(scrollTop >= 100 && scrollTop <= 200 ){
+
+          jQuery('.sticky-menu').addClass('whitish');
+
+        }
+
+    }else{
+        jQuery('.sticky-menu').removeClass('makesticky');
+
+        jQuery('.sticky-menu').removeClass('whitish');
+          jQuery('.sticky-menu').removeClass('greyish');
+
+           jQuery('.sticky-menu').removeClass('greenish');
+    }
+
+
+     if(scrollTop >= 200 && scrollTop <= 300 ){
+
+             jQuery('.sticky-menu').addClass('greenish');
+             jQuery('.sticky-menu').removeClass('greyish');
+             jQuery('.sticky-menu').removeClass('whitish');
+     } 
+
+      if(scrollTop >= 300   ){
+
+
+        jQuery('.sticky-menu').addClass('greyish');
+
+        jQuery('.sticky-menu').removeClass('greenish');
+        jQuery('.sticky-menu').removeClass('whitish');
+     } 
+
+});
+    </script>
 
 </body>
 </html>

@@ -87,4 +87,201 @@
 .banner-ever h2{
 
     font-size: 157px;
+    transform: translate(0, 0);
+  transition: transform 0.5s ease;
 }
+
+.desktop img {
+    height: 496px;
+    width: 100%;
+}
+
+
+.tab img {
+
+    height: 100px;
+    width:100px
+}
+
+
+ .tab{ display: none;}
+
+ .makesticky{
+
+    position: fixed;
+    top: 13px;
+    z-index: 99999;
+ }
+
+
+ .greenish{
+
+    background-color: #0ce89b;
+ }
+
+ .whitish{
+
+    background-color: #b1d0c5;
+ }
+
+ .greyish{
+
+    background-color: #c0c4f3;
+ }
+
+ .banner-ever h2:hover{
+   translate: 50px 0;
+ }
+
+.mobile{ display: none;}
+
+ @media screen and (max-width: 480px) { 
+
+
+
+    .sticky-menu {   
+             left: 5%;
+        width: 72%;
+        
+    }
+
+    .banner-ever h2 {
+    font-size: 61px;
+    }
+    .sticky-menu li { font-size: 10px;}
+
+    .desktop{ display: none;}
+
+     .tab{ display: none;}
+
+     .mobile{ display: block;
+    
+        position: relative;
+        
+        height: auto;
+    
+    }
+ .area-btn{ display: none;}
+
+    .learn-more{display:none;}
+
+
+.mobile img {
+ 
+
+  height: 453px;
+         
+        width: 100%;
+        display: block;
+    
+}
+
+
+ }
+
+ @media screen and (min-width:481px) and (max-width:600px) { 
+ .sticky-menu {   
+             left: 5%;
+        width: 72%;
+        
+    }
+
+    .banner-ever h2 {
+    font-size: 61px;
+    }
+    .sticky-menu li { font-size: 10px;}
+
+    .desktop{ display: none;}
+
+     .tab{ display: none;}
+
+     .mobile{ display: block;
+    
+        position: relative;
+        
+        height: auto;
+    
+    }
+ .area-btn{ display: none;}
+
+    .learn-more{display:none;}
+
+
+.mobile img {
+ 
+
+  height: 453px;
+         
+        width: 100%;
+        display: block;
+    
+}
+
+ }
+
+ @media screen and (min-width:601px) and (max-width:767px) { 
+
+    .sticky-menu {   
+             left: 5%;
+        width: 72%;
+        
+    }
+
+    .banner-ever h2 {
+    font-size: 61px;
+    }
+    .sticky-menu li { font-size: 10px;}
+
+    .desktop{ display: none;}
+
+     .mobile{ display: none;}
+
+     .tab{ display: block;
+    
+        position: relative;
+        
+        height: auto;
+    
+    }
+ .area-btn{ display: none;}
+
+    .learn-more{display:none;}
+
+
+.tab img {
+ 
+
+  height: 453px;
+         
+        width: 100%;
+        display: block;
+    
+}
+
+ }
+
+
+ @media screen and (min-width:768px) and (max-width:900px) { 
+
+    .area-btn{ display: none;}
+
+    .learn-more{display:none;}
+
+    .mobile{ display: none;}
+
+ .desktop{ display: none;}
+
+     .tab{ display: block;}
+
+.tab img {
+
+    height: 100px;
+    width:100px
+}
+
+ }
+
+  @media screen and (min-width:901px) and (max-width:1024px) { 
+
+
+  }
