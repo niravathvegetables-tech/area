@@ -135,6 +135,16 @@
 
 .mobile{ display: none;}
 
+.list-header select {
+width: 344px;
+    border: #4c7779;
+    border-radius: 12%;
+    border: solid;
+    padding: 12px 45px;
+    margin-top: 25px;
+
+}
+
  @media screen and (max-width: 480px) { 
 
 
